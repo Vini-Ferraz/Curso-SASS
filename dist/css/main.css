@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+    box-shadow: none;
+  }
+}
+body {
+  background-color: #1e1e1e;
+}
+
+.luzes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.lampada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.luz_base {
+  background-color: #666666;
+  width: 35px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.luz_soquete {
+  width: 35px;
+  height: 6px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+
+.luzes .lampada #luz_01 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #eb3131;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #eb3131;
+  animation: piscar 1s infinite;
+}
+.luzes .lampada #luz_02 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #46cc46;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #46cc46;
+  animation: piscar 1s infinite;
+  animation-delay: 0.5s;
+}
+.luzes .lampada #luz_03 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff0f0;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #fff0f0;
+  animation: piscar 1s infinite;
+}
+.luzes .lampada #luz_04 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #eb3131;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #eb3131;
+  animation: piscar 1s infinite;
+  animation-delay: 0.5s;
+}
+.luzes .lampada #luz_05 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #46cc46;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #46cc46;
+  animation: piscar 1s infinite;
+}
+.luzes .lampada #luz_06 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff0f0;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #fff0f0;
+  animation: piscar 1s infinite;
+  animation-delay: 0.5s;
+}
+.luzes .lampada #luz_07 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #eb3131;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #eb3131;
+  animation: piscar 1s infinite;
+}
+.luzes .lampada #luz_08 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #46cc46;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #46cc46;
+  animation: piscar 1s infinite;
+  animation-delay: 0.5s;
+}
+.luzes .lampada #luz_09 {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff0f0;
+  margin-top: -5px;
+  z-index: -10;
+  box-shadow: 0 4px 30px 10px #fff0f0;
+  animation: piscar 1s infinite;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,91 @@
+@import "variaveis";
+@import "mixins";
+@import "resets";
+
+@keyframes piscar {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+    box-shadow: none;
+  }
+}
+
+body {
+  background-color: $cor-fundo;
+}
+
+.luzes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.lampada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.luz_base {
+  background-color: $cor-luz-base;
+  width: 35px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.luz_soquete {
+  width: 35px;
+  height: 6px;
+  background-color: $cor-luz-soquete;
+  border-radius: 5px;
+}
+
+.luzes {
+  .lampada {
+    #luz_01 {
+      @include luz-bulbo($cor-luz-primaria);
+      animation: piscar 1s infinite;
+    }
+    #luz_02 {
+      @include luz-bulbo($cor-luz-secundaria);
+      animation: piscar 1s infinite;
+      animation-delay: 0.5s;
+    }
+    #luz_03 {
+      @include luz-bulbo($cor-luz-terciaria);
+      animation: piscar 1s infinite;
+    }
+    #luz_04 {
+      @include luz-bulbo($cor-luz-primaria);
+      animation: piscar 1s infinite;
+      animation-delay: 0.5s;
+    }
+    #luz_05 {
+      @include luz-bulbo($cor-luz-secundaria);
+      animation: piscar 1s infinite;
+    }
+    #luz_06 {
+      @include luz-bulbo($cor-luz-terciaria);
+      animation: piscar 1s infinite;
+      animation-delay: 0.5s;
+    }
+    #luz_07 {
+      @include luz-bulbo($cor-luz-primaria);
+      animation: piscar 1s infinite;
+    }
+    #luz_08 {
+      @include luz-bulbo($cor-luz-secundaria);
+      animation: piscar 1s infinite;
+      animation-delay: 0.5s;
+    }
+    #luz_09 {
+      @include luz-bulbo($cor-luz-terciaria);
+      animation: piscar 1s infinite;
+    }
+  }
+}
